@@ -1,0 +1,2 @@
+This is an example text file served by the Vercel function.
+Add any other .txt files in this folder (api/texts/) to serve them.
