@@ -926,7 +926,7 @@ async def txt_handler(bot: Client, m: Message):
                 continue
 
     except Exception as e:
-    await m.reply_text(str(e))
+    await m.reply_text(str(e)
 await m.reply_text("🔰Done🔰")
 # Ankitshakya
 
@@ -1188,7 +1188,7 @@ async def txt_handler(bot: Client, m: Message):
                 continue
 
     except Exception as e:
-    await m.reply_text(str(e))
+    await m.reply_text(str(e)
 await m.reply_text("🔰Done🔰")
 
 # m3u8
