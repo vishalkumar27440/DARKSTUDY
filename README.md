@@ -12,7 +12,7 @@
 - Convert your txt into video 
 - Working fine for pw, appx and classplus txt
 - Multiple modes & custom output options
-- Supports `/upload`, `/advance`, `/spidy`, and more
+- Supports `/upload`, `/advance`, `/team`, and more
 
 ---
 
@@ -22,7 +22,7 @@
 /stop        - Stop ongoing task
 /upload      - For using in groups
 /advance     - Advance download
-/spidy       - All types txt
+/team       - All types txt
 /alpha       - Much better
 /bravo       - Another one
 ```
