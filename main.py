@@ -209,15 +209,19 @@ async def txt_handler(bot: Client, m: Message):
         file_name_without_ext = os.path.splitext(file_name)[0]
         
         # Create a fancy batch name
-        fancy_batch_name = f"🎓𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲: 𝗤𝘂𝗮𝗹𝗶𝘁𝘆".replace("𝗤𝘂𝗮𝗹𝗶𝘁𝘆", file_name_without_ext)
-        
-        # Send a message with the batch name and pin it
-        name_message = await bot.send_message(
-            m.chat.id,
-            f"📌 **Batch Name Pinned!** 📌\n"
-            f"🎨 {fancy_batch_name}\n"
-            f"✨ Stay organized with your pinned batches 🚀!"
-        )
+        if raw_text == "1":
+    file_name_without_ext = os.path.splitext(file_name)[0]
+    fancy_batch_name = f"🎓𝗕𝗮𝘁𝗰𝗵 𝗡𝗮𝗺𝗲: {file_name_without_ext}"
+    name_message = await bot.send_message(
+        m.chat.id,
+        "📌 **Batch Name Pinned!** 📌\n"
+        f"🎨 {fancy_batch_name}\n"
+        "✨ Stay organized with your pinned batches 🚀!"
+    )
+    try:
+        await bot.pin_chat_message(m.chat.id, name_message.id)
+    except Exception:
+        pass
         await bot.pin_chat_message(m.chat.id, name_message.id)
         
         # Wait for 2 seconds before proceeding
