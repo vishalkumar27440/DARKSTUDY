@@ -926,9 +926,8 @@ async def txt_handler(bot: Client, m: Message):
                 continue
 
     except Exception as e:
-        await m.reply_text(e)
-    await m.reply_text("🔰Done🔰")
-
+    await m.reply_text(str(e))
+await m.reply_text("🔰Done🔰")
 # Ankitshakya
 
 @bot.on_message(filters.command(["spidy"]))
@@ -1189,8 +1188,8 @@ async def txt_handler(bot: Client, m: Message):
                 continue
 
     except Exception as e:
-        await m.reply_text(e)
-    await m.reply_text("🔰Done🔰"
+    await m.reply_text(str(e))
+await m.reply_text("🔰Done🔰")
 
 # m3u8
 
