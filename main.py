@@ -3,14 +3,28 @@ import re
 import sys
 import json
 import time
+import aiohttp
 import asyncio
 import requests
 import subprocess
 import urllib.parse
-import yt_dlp
 import cloudscraper
+import datetime
+import random
+import ffmpeg
+import logging 
+import yt_dlp
+import youtube_dl
+import  pyrogram
+from aiohttp import web
+from core import *
+from urllib.parse import urlparse, parse_qs
+from bs4 import BeautifulSoup
+from yt_dlp import YoutubeDL
+import yt_dlp as youtube_dl
 import m3u8
 import core as helper
+from utils import progress_bar
 from utils import progress_bar
 from vars import API_ID, API_HASH, BOT_TOKEN
 from aiohttp import ClientSession
@@ -37,7 +51,7 @@ bot = Client(
 photo = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
 cpphoto = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
 appxzip = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
-my_name = "🆅🅸🆂🅷🅰🅻"
+my_name = "VK"
 CHANNEL_ID = "-1003924837795"##change it with your channel 🆔 
 
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
